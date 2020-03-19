@@ -28,7 +28,7 @@ module.exports = merge(common, {
     contentBase: paths.build,
     open: true,
     compress: true,
-    hot: true,
+    hot: false,
     port: 3000,
   },
 
@@ -40,4 +40,6 @@ module.exports = merge(common, {
      */
     new webpack.HotModuleReplacementPlugin(),
   ],
+
+  watch: true,
 });
